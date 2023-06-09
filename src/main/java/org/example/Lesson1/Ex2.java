@@ -16,11 +16,10 @@ public class Ex2 {
         int result = 0;
         int a = 0, b = 0;
         a = scan.nextInt();
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             b = scan.nextInt();
-            if (a > 0 && b < 0);
-            result = i++;
-            a = b;
+            if (a > 0 && b < 0)  result += a;
+                a = b;
         }
         scan.close();
         return result;
