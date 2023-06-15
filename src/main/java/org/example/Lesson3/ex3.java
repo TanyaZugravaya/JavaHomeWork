@@ -1,2 +1,4 @@
-package org.example.Lesson3;public class ex3 {
+package org.example.Lesson3;
+
+public class ex3{
 }
