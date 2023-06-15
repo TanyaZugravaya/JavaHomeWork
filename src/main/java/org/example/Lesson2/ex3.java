@@ -12,8 +12,6 @@ public class ex3 {
             }
         }
         System.out.println("Сумма двузначных элементов массива = " + tmp);
-//        int [] n1 = new int[];
-//        int[]n1 = int[]n;
         for (int i = 0; i <n.length ; i++) {
             if (n[i]<0) n[i] = tmp;
         }
