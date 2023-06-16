@@ -14,22 +14,16 @@ public class Main {
         products.add(product3);
         int maxPrice = 0;
         for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getName().equals("высший")
-                    && products.get(i).getSort()==1
-                    || products.get(i).getSort()==2) {
-                    if (maxPrice < products.get(i).getPrice()) {
-                        maxPrice = products.get(i).getPrice();
+            for (Product product : products) {
+                if (product.getName().contains("высший")
+                        && (product.getSort() == 1 || product.getSort() == 2)) {
+                    if (maxPrice < product.getPrice()) {
+                        maxPrice = product.getPrice();
                     }
                 }
-//        for (Product product : products) {
-//            if (product.getName().contains("высший")
-//                    && (product.getSort() == 1 || product.getSort() == 2)){
-//                if (maxPrice < product.getPrice()){
-//                    maxPrice = product.getPrice();
-//                }
-//            }
+            }
         }
-        System.out.println("products = " + products);
-        System.out.println("maxPrice = " + maxPrice);
+            System.out.println("products = " + products);
+            System.out.println("maxPrice = " + maxPrice);
     }
 }
